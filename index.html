@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,400&family=Secular+One&display=swap" rel="stylesheet">
+  <title>Combinatorial Calculator</title>
+</head>
+
+<body>
+  <header>
+    <h1>CombinaCalc!</h1>
+  </header>
+  <main>
+    <section class="calcs" id="factorial">
+      <h2>Fatorial:</h2>
+      <p>Dígite o número que você deseja saber o fatorial (!)</p>
+      <input type="number" name="factorial" id="factorialInput" min="1">
+      <button id="factorialBtn">Calcular</button>
+      <div class="resp"></div>
+    </section>
+    <section class="calcs" id="arrangement">
+      <h2>Arranjo simples:</h2>
+      <p>Se você deseja saber a quantidade de maneiras que se pode agrupar n elementos distintos você faz uso do arranjo. Mas preste atenção! O arranjo só é usado quando a <strong>ordem</strong> dos elementos <strong>importa</strong> para o resultado final</p>
+      <p class="info">Para obter o arranjo simples de n elementos tomados, p a p (p ≤ n), utiliza-se a seguinte expressão: <em class="formula">A<small>n,p</small>: n!/(n-p)!</em></p>
+      <div class="input"><label for="arrangementN">n:</label>
+        <input type="number" name="arrangementN" id="arrangementN" min="1">
+      </div>
+      <div class="input"><label for="arrangementP">p:</label>
+        <input type="number" name="arrangementP" id="arrangementP" min="1">
+      </div>
+      <button id="arrangementBtn">Calcular</button>
+      <div class="resp"></div>
+    </section>
+    <section class="calcs" id="combination">
+      <h2>Combinação simples:</h2>
+      <p>As combinações são subconjuntos em que a <strong>ordem</strong> dos elementos <strong>não é importante</strong>, entretanto, são caracterizadas pela natureza dos mesmos.</p>
+      <p class="info">Para calcular uma combinação simples de n elementos tomados p a p (p ≤ n), utiliza-se a seguinte expressão: <em class="formula">C<small>n,p</small>: n!/(p! * (n-p)!)</em></p>
+      <div class="input"><label for="combinationN">n:</label>
+        <input type="number" name="combinationN" id="combinationN" min="1">
+      </div>
+      <div class="input"><label for="combinationP">p:</label>
+        <input type="number" name="combinationP" id="combinationP" min="1">
+      </div>
+      <button id="combinationBtn">Calcular</button>
+      <div class="resp"></div>
+    </section>
+  </main>
+  <footer>
+    <h1>CombinaCalc<span id="fatorial">!</span></h1>
+    <p>©2022 JonathanPR0</p>
+    <p>Todos os direitos reservados.</p>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+
+</html>
